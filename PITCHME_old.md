@@ -1,42 +1,10 @@
-# Git Workshop - Let's git our shit together!
 
---- 
+### Why Git?
 
-### Who am I? 
-- Frie(~drike~) Preu
-- data scientist / IT consultant / software developer bei codecentric 
-- bei CorrelAid: IT Infrastruktur, interne Projekte (R Packages, ...) 
-- Add me:
-    - LinkedIn: [Friedrike Preu](https://www.linkedin.com/in/friedrike-preu-a2bb46a7/)
-    - Twitter: [@ameisen_strasse](https://twitter.com/ameisen_strasse)
-    - GitHub: [friep](https://github.com/friep)
-
----
-
-
-### Installation und Accounterstellung
-- siehe `README` des Repositories
-- [www.github.com/friep/git-our-shit-together](www.github.com/friep/git-our-shit-together)
-
-
----
-
-### Partner up!
-
-- Mona Lovalace Octocat
-![Mona](images/mona-lovelace.jpg)
-- Grace Hopper Octocat
-![Grace](images/gracehoppertocat.jpg)
-
----
-
-### Warum Git?
-
-- Masterarbeit.docx
-- Masterarbeit_v1.docx
-- Masterarbeit_FINAL.docx
-- Masterarbeit_FINAL_TimsKommentare.docx
-- Masterarbeit_FINAL_FINAL.docx
+- masterthesis.docx
+- masterthesis_v1.docx
+- masterthesis_FINAL.docx
+- masterthesis_FINAL_FINAL.docx
 
 ---
 
@@ -45,12 +13,12 @@
 ---
 
 ### Version Control to the Rescue!
-- Beispiel: diese Präsentation. 
+- Example: This presentation 
 
 ---
 
 
-# Daten runterladen - Fork und Clone
+# Download the data - Fork und Clone
 
 ---
 
@@ -59,7 +27,7 @@
 
 @box[bg-blue text-black rounded](Repository#"A Git repository is a virtual storage of your project. It allows you to save versions of your code, which you can access when needed." ([Source](https://www.atlassian.com/git/tutorials/setting-up-a-repository)))
 
-@box[bg-blue text-black rounded](Fork#"A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project." ([Source](https://help.github.com/articles/fork-a-repo/)))
+@box[bg-blue text-black rounded](Fork#"A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project." ([Source](https://help.github.com/articles/fork-a-repo/))
 
 ---
 
@@ -77,7 +45,7 @@
 
 ---
 
-### Hands On 2 - Fork und Clone
+### Hands On 1 - Fork und Clone
 
 #### Mona & Grace
 
@@ -90,11 +58,42 @@
 
 @olend
 
+
 ---
 
-# Authentification 
+### Oh!
 
---- 
+![Git clone error](images/gitclone_auth_error.png)
+
+
+---
+
+### Oh! - Nicht-Gitkraken
+
+```
+Cloning into 'git-our-shit-together'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+```
+
+---
+
+### SSH 
+
+@ul 
+
+- Download: 
+    - prinzipell jede*r @fa[lock-open] über `https` --> @fa[github]: @fa[check]
+    - `ssh`: vorherige Einrichtung ntowendig --> @fa[github]: @fa[question]
+- Upload: nur authentifizierte Personen @fa[lock]
+- --> @fa[github]: @fa[question]
+
+@ulend
+
+---
 
 ### Authentification - Passwort
 
@@ -170,8 +169,6 @@
     - Umbenennung von Dateien
 - ein Commit kann mehrere Änderungen beinhalten
 
-
-
 ---
 
 ### Adding und Staging Area 
@@ -196,6 +193,11 @@ Grace + Mona
 @olend
 
 ---
+
+![](https://i.gifer.com/XtFT.gif)
+
+---
+
 
 ### Git quizzed!
 
@@ -228,13 +230,8 @@ Grace + Mona
 
 ... what? 
 
-
-@ul
-
-- **Lokal**: dein PC
-- **Remote**: in der Cloud (GitHub, GitLab, ...)
-
-@ulend 
+**Lokal**: dein PC
+**Remote**: in der Cloud (GitHub, GitLab, ...)
 
 ![Gitkraken Lokal Remote](images/gitkraken_remote_lokal.png)
 
@@ -302,7 +299,8 @@ Grace + Mona
 
 @ol
 
-- so lange nichts gepusht ist, alles (halbwegs) gut --> oft committen!
+- so lange nichts gepusht ist, alles (halbwegs) gut
+    - oft committen!
 - zur Not: Codestand sichern und neu clonen 
 
 @olend 
@@ -310,30 +308,7 @@ Grace + Mona
 
 --- 
 
-### Merge conflicts
-
-@box[bg-blue text-black rounded](Merge conflicts#"Merge conflicts occur when competing changes are made to the same line of a file, or when one person edits a file and another person deletes the same file." ([Source](https://help.github.com/en/articles/resolving-a-merge-conflict-using-the-command-line)))
-
-### Merge conflicts
-- müssen lokal und **manuell** gelöst werden --> entscheiden, welche Version man beibehält
-- integriertes [Merge Conflict Tool in Gitkraken](https://blog.axosoft.com/merge-conflict-tool/)
-
-### Hands on 5: Merge conflicts
-
-@ol
-- Mona oder Grace: editiert **auf GitHub** das Readme in einer Zeile
-- Mona & Grace: editiert bei sich lokal das Readme in der gleichen Zeile (etwas anderes)
-- Mona & Grace: eigene Änderung committen (nicht pushen!)
-- Mona & Grace: `pull` 
-- Mona & Grace: merge conflict lokal lösen und die eigene Version pushen.
-
-@olend 
-
----
-
-
-
-### Sidenote: Git stash
+### Git stash
 
 @box[bg-blue text-black rounded](Stash#"git stash temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on. Stashing is handy if you need to quickly switch context and work on something else, but you're mid-way through a code change and aren't quite ready to commit". ([Source](https://www.atlassian.com/git/tutorials/saving-changes/git-stash)))
 
@@ -362,6 +337,10 @@ Grace + Mona
 
 ---
 
+### Hands on 5: Merge conflicts
+
+---
+
 # mit GitHub arbeiten
 
 
@@ -377,15 +356,13 @@ Grace + Mona
 
 @ulend
 
-- Beispiel: [https://github.com/jandix/sealr/issues](https://github.com/jandix/sealr/issues) 
-
 ---
 
-### Hands On 6: Issue
+### Hands On 4: Issue
 
 @ol
 
-- Mona: Issue erstellen: "Add Grace's favorite GIF"
+- Mona: Issue erstellen: "Grace's LieblingsGIF fehlt"
 - Grace: füge der Präsentation eine neue Folie hinzu mit deinem Lieblingsgif (giphy -> copy link)
 - Grace: add + commit. verlinke issue Nummer in der commit message (#issueno)
 - Grace: push
@@ -395,26 +372,12 @@ Grace + Mona
 
 ---
 
-### Fazit Issues
-
-@ul
-
-- sehr nützlich zur Projektorganisation
-- Diskussion ist zentralisiert (aber: keine sensiblen Informationen in GitHub!)
-- Tipp: Projekt mit Kanban Board (siehe "Projects" in GitHub) zum Prozesstracking (todo, in progress, done)
-
-@ulend
-
---> bitte verwenden!
-
----
-
-# Branches und Pull Requests
+# Branches
 
 ---
 
 
-![Gitkraken branching](images/screenshot_branching_gitkraken.png)
+[picture of complicated gitkraken with a lot of branches]
 
 ---
 
@@ -439,13 +402,11 @@ Grace + Mona
 
 @ul
 
-- Stabilität: Nur working code auf "master" branch --> z.B. Download von GitHub (`devtools::install_github()`) oder continuous deployment
-- Kollaboration: unabhängige Entwicklung von Code ("feature branches")
-- Experimente: Branch einfach wieder löschen. 
+- "master" branch frei von unfertigem Code halten
+- unabhängige Entwicklung von Code ("feature branches")
+- Experimente
 
 @ulend
-
-- Beispiel: [https://github.com/jandix/sealr/branches](https://github.com/jandix/sealr/branches)
 
 ---
 
@@ -453,8 +414,7 @@ Grace + Mona
 
 @ol
 
-- Branch in Gitkraken erstellen mit aussagekräftigem Namen (z.B. issue1-add-favorite-gif)  
-- branch auschecken (Doppelklick on Icon in Gitkraken)
+- Branch erstellen
 - normal weiterarbeiten (pull-commit-push cycles)
 - (optional: merge andere branches in deinen branch um Updates zu bekommen)
 - merge Branch in master branch 
@@ -467,40 +427,26 @@ Grace + Mona
 
 - Rechtsclick auf branch name / master
 - hängt davon ab, wer "weiter vorne" ist (?)
-    - wenn neue commits auf master: merge master into issue1-add-favorite-gif -> branch wird geupdatet
-    - wenn neue commits auf branch: merge issue1-add-favorite-gif into master -> master wird geupdatet
+    - wenn neue commits auf master: merge master into #1-add-branch-slides -> branch wird geupdatet
+    - wenn neue commits auf branch: merge #1-add-branch-slides into master -> master wird geupdatet
 
 
-### Pull Requests
-
-@box[bg-blue text-black rounded](Pull requests#Pull requests let you tell others about changes you've pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch.[Source](https://help.github.com/en/articles/about-pull-requests))
-
-
-### Pull Requests
-
-@ul
-
-- in Kombination mit Branches verwenden
-- "Review" Funktionalität
-- 
-
-@ulend 
 
 ---
 
-### Branches und Pull Requests Fazit
+### Branches Fazit
 
 @ul
 
-- besonders nützlich bei Entwicklung von Packages oder Applikationen (z.B. Shiny Dashboards): Feature Branches. 
-- Relevanz für Datenprojekte: z.B. paralleles Ausprobieren von verschiedenen Modellansätzen. 
-- Pull Requests (PR) zentralisieren Diskussion an einem Ort. 
-
+- besonders nützlich bei Kollaboration
+- Entwicklung von Packages 
+- Relevanz für Datenprojekte (?)
+ -test text
+ 
 @ulend
-
 
 ---
 
 # Das wars. 
 
-### Morgen dann Setup eurer GitHub Repos - schon mal Namen überlegen! ;) #priorities
+### gerne den Tag über fragen! 
