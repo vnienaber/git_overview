@@ -1,34 +1,10 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
-# Git 
---- 
 
-### Installation und Accounterstellung
-- siehe `README` des Repositories
-- `www.github.com/friep/git-our-shit-together`
+### Why Git?
 
-
----
-
-### Partner up!
-
-- Mona Lovalace Octocat
-![Mona](images/mona-lovelace.jpg)
-- Grace Hopper Octocat
-![Grace](images/gracehoppertocat.jpg)
-
----
-
-### Warum Git?
-
-- Masterarbeit.docx
-- Masterarbeit_v1.docx
-- Masterarbeit_FINAL.docx
-- Masterarbeit_FINAL_TimsKommentare.docx
-- Masterarbeit_FINAL_FINAL.docx
+- masterthesis.docx
+- masterthesis_v1.docx
+- masterthesis_FINAL.docx
+- masterthesis_FINAL_FINAL.docx
 
 ---
 
@@ -37,12 +13,12 @@ output:
 ---
 
 ### Version Control to the Rescue!
-- Beispiel: diese Präsentation. 
+- Example: This presentation 
 
 ---
 
 
-# Daten runterladen - Fork und Clone
+# Download the data - Fork und Clone
 
 ---
 
